@@ -15,7 +15,7 @@ const CreatePost = () => {
   return (
     <div>
       <h1>{labels.CREATE_A_NEW_POST}</h1>
-      <PostForm createPost={createPost} />
+      <PostForm handleSubmit={createPost} />
     </div>
   );
 };
