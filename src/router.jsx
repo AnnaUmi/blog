@@ -8,6 +8,7 @@ import { APP_ROUTES } from './ulils/consts';
 const router = createBrowserRouter([{
   path: '/',
   element: <AppLayout />,
+  errorElement: <div>404</div>, // some global error component
   children: [
     {
       path: APP_ROUTES.posts,
@@ -18,7 +19,7 @@ const router = createBrowserRouter([{
       element: <CreatePost />,
     },
     {
-      path: APP_ROUTES.post,
+      path: `${APP_ROUTES.post}:id`,
       element: <Post />,
     },
   ],

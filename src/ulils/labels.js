@@ -6,5 +6,7 @@ const labels = {
   TITLE: 'Title',
   POST: 'Post',
   POSTS: 'Posts',
+  ERROR: 'Error',
+  SOMETHING_WENT_WRONG: 'Something went wrong',
 };
 export default labels;

@@ -14,8 +14,12 @@ const createPost = (body) =>
     .then((response) => response.json())
     .then((json) => console.log(json));
 
+const getPostById = (id) =>
+  fetch(`${url}/posts/${id}`).then((response) => response.json());
+
 const api = {
   createPost,
   getPosts,
+  getPostById,
 };
 export default api;

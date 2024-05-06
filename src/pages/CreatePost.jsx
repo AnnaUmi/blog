@@ -10,6 +10,9 @@ const CreatePost = () => {
     onSuccess() {
       return <Notification title={labels.SUCCESS}>{labels.POST_CREATED}</Notification>;
     },
+    onError() {
+      return <Notification title={labels.ERROR}>{labels.SOMETHING_WENT_WRONG}</Notification>;
+    }
   });
 
   return (
