@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom';
 import { useQuery } from '@tanstack/react-query';
 import api from '../api/api';
-import {Loader} from "@mantine/core";
+import { Loader } from '@mantine/core';
 
 const Post = () => {
   const { id } = useParams();
